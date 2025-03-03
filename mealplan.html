@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan</title>
+    <link rel="stylesheet" href="style.css"> <!-- # Link to external CSS file -->
+</head>
+<body>
+
+    <!-- # Header Section -->
+    <header>
+        <div class="header-content">
+            <h1>Sunnah Meal - Meal Plan</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>  <!-- # Link to home page -->
+                    <li><a href="mealplan.html">Meal Plan</a></li>  <!-- # Link to meal plan page -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- # Meal Plan Section -->
+    <div id="meal-plan-section">
+        <h2>Your Weekly Meal Plan</h2>
+
+        <!-- # Search bar for meal plan -->
+        <div id="meal-plan-search">
+            <input type="text" id="searchInput" placeholder="Search meals..." />
+            <button id="btnSearch">Search</button>
+        </div>
+
+        <!-- # Meal Plan Table -->
+        <div id="mealPlanTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>  <!-- # Column for day of the week -->
+                        <th>Meal</th>  <!-- # Column for meal name -->
+                        <th>Actions</th>  <!-- # Column for edit and delete buttons -->
+                    </tr>
+                </thead>
+                <tbody id="mealPlanTableBody"></tbody>  <!-- # Meal list will be inserted here via JavaScript -->
+            </table>
+        </div>
+
+        <!-- # Button to clear meal plan -->
+        <div id="meal-plan-actions">
+            <button id="btnClear">Clear Plan</button>
+        </div>
+    </div>
+
+    <!-- # Modal for Editing Meals -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeEditModal()">&times;</span>  <!-- # Close modal button -->
+            <h2>Edit Meal</h2>
+            <input type="text" id="editMealInput" placeholder="Enter new meal name">
+            <button id="saveEditBtn">Save</button>  <!-- # Save edited meal -->
+        </div>
+    </div>
+
+    <!-- # Footer Section -->
+    <footer>
+        <p>&copy; 2025 Sunnah Meal | All Rights Reserved</p>
+    </footer>
+
+    <!-- # JavaScript File Link -->
+    <script src="index.js"></script>
+</body>
+</html>

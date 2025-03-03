@@ -1,0 +1,204 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #D2B48C, #FFF8E1); /* # Soft brown and cream gradient */
+  margin: 0;
+  padding: 0;
+}
+
+/* # ===== Header Section ===== */
+header {
+  background: linear-gradient(to right, #B0855B, #FFD699); /* # Warm brown gradient */
+  color: white;
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* # Navigation Menu */
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* # ===== Main Content Section ===== */
+#main-content {
+  padding: 20px;
+  background-color: #FDF6EC; /* # Light beige background */
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* # ===== Ingredient & Search Section ===== */
+#ingredient-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+#ingredient-section input, #ingredient-section select {
+  padding: 10px;
+  font-size: 1rem;
+  width: 80%;
+  max-width: 300px;
+}
+
+/* # Search Button */
+#ingredient-section button {
+  font-size: 1rem;
+  padding: 10px;
+  background-color: #5A3825; /* # Dark brown button */
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  max-width: 300px;
+}
+
+#ingredient-section button:hover {
+  background-color: #D4AC2C; /* # Golden hover effect */
+}
+
+/* # ===== Recipe Images Grid ===== */
+#recipeImages {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+}
+
+/* # Recipe Card */
+.recipe-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 90%;
+  text-align: center;
+}
+
+/* # Recipe Card Image */
+.recipe-card img {
+  width: 100%;
+  border-radius: 8px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* # ===== Meal Plan Table ===== */
+#mealPlanTable {
+  margin: 20px auto;
+  width: 80%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* # Removes extra spacing between table cells */
+}
+
+/* # Table Headers & Cells */
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* # ===== Modal (Edit Meal) Styles ===== */
+.modal {
+  display: none; /* # Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  text-align: center;
+}
+
+/* # Close Button for Modal */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* # ===== Footer Section ===== */
+footer {
+  background: linear-gradient(to right, #B0855B, #FFD699);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+/* # ===== Buttons Styling ===== */
+button {
+  font-size: 1rem;
+  padding: 10px;
+  background-color: #8D6E63; /* # Brown color */
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+  max-width: 300px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #5D4037; /* # Darker brown when hovered */
+  transform: scale(1.05); /* # Slight zoom effect */
+}
+
+/* # ===== Fix Footer to Bottom ===== */
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#main-content, #meal-plan-section {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+}

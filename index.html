@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunnah Meal</title>
+    <link rel="stylesheet" href="style.css"> <!-- # Link to external CSS file -->
+</head>
+<body>
+
+    <!-- # Header Section -->
+    <header>
+        <div class="header-content">
+            <h1>Sunnah Meal</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>  <!-- # Link to home page -->
+                    <li><a href="mealplan.html">Meal Plan</a></li>  <!-- # Link to meal plan page -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- # Main Content Section -->
+    <div id="main-content">
+        <h2>Find Delicious Recipes Based on Sunnah Foods</h2>
+
+        <!-- # Dropdown to Select Day -->
+        <label for="daySelect">Select Day:</label>
+        <select id="daySelect">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+        </select>
+
+        <!-- # Ingredient Input Section -->
+        <div id="ingredient-section">
+            <label for="ingredientInput">Enter Ingredient:</label>
+            <input type="text" id="ingredientInput" placeholder="e.g., dates" />
+            <button id="fetchRecipe">Search Recipe</button>
+        </div>
+
+        <!-- # Recipe Image Display Section -->
+        <div id="recipeImages"></div>
+    </div>
+
+    <!-- # Footer Section -->
+    <footer>
+        <p>&copy; 2025 Sunnah Meal | All Rights Reserved</p>
+    </footer>
+
+    <!-- # JavaScript File Link -->
+    <script src="index.js"></script>
+</body>
+</html>
